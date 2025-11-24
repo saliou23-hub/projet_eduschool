@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscription</title>
+  <link rel="stylesheet" href="css/inscription.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+    const supabaseUrl="https://ppmyxgqyuetqozqzxsoz.supabase.co";
+    const supabaseKey="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBwbXl4Z3F5dWV0cW96cXp4c296Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI2NjMzNTYsImV4cCI6MjA3ODIzOTM1Nn0.Yyd8tJ5oc4qv1kBSWPCpzWIeLVvJORKXuzj5Qyvmtiw";
+    const supabaseClient =supabase.createClient(supabaseUrl, supabaseKey);
+  </script>
+</head>
+<body>
+  <header>
+            <div class="nav-inner">
+                <div class="brand">
+      
+                    <div class="logo"> <img src="images/logo.jpeg"></div>
+                    <div>
+                        <div style="font-weight:700">EDUSCHOOL</div>
+                        <div class="small">Apprendre · Pratiquer · Réussir</div>
+                    </div>
+                </div>
+    
+
+                <nav>
+                    <ul>
+                        <li><a href="eduschool.html" onclick="go('home')">Accueil</a></li>
+                        <li><a href="cours.html" onclick="go('courses')">Cours</a></li>
+                        <li><a href="contact.html" onclick="go('contact')">Contact</a></li>
+                        <li><a href="communaute.html" onclick="go('faq')">FAQ</a></li>
+                        <li><a href="authentification.html" onclick="go('Connexion')">Connexion</a></li>
+                        <li id="navAuth"></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+  <main>
+    <form id="registerForm">
+      <h2>Inscription</h2>
+      <input type="text" id="nom" placeholder="Nom complet" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="motdepasse" placeholder="Mot de passe" required>
+      <button type="submit">S'inscrire</button>
+    </form>
+</main>
+ 
+  <script src="js/inscription.js"></script>
+</body>
+ <footer class="footer">
+  <div class="footer-col">
+    <h3>Navigation</h3>
+    <a href="#">Accueil</a>
+    <a href="#">Cours</a>
+    <a href="#">Connexion</a>
+    <a href="#">Contact</a>
+    <a href="#">Quiz</a>
+    
+  </div>
+
+  <div class="footer-col">
+    <h3>THÉMATIQUES</h3>
+    <a href="#">Mathematique</a>
+    <a href="#">Programmation</a>
+    <a href="#">Physique</a>
+    <a href="#">science-Humain</a>
+    <div class="identifiant"><p>© 2025 Eduschool</p></div>
+    
+  </div>
+
+  <div class="footer-col">
+    <h3>Nos contacts</h3>
+    <div class="social">
+    <a href="#">Facebook<img src="images/2023_Facebook_icon.svg.webp" alt="Facebook"></a>
+    <a href="#">Twitter<img src="images/nouvelle-icone-du-logo-twitter-x-fond-noir_1017-45427.jpg" alt="Instagram"></a>
+    <a href="#">Instagram<img src="images/Instagram_logo_2016.svg.webp" alt="Twitter"></a>
+    <a href="#">Youtube<img src="images/youtubepng.png" alt="Youtube"></a>
+    <a href="#">LinkedIn<img src="images/linkedin.png" alt="LinkedIn"></a>
+    </div>
+  </div>
+  
+</footer>
+</html>
