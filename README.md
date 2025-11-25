@@ -1,1 +1,3 @@
 # projet_eduschool
+Pour la réalisation de notre projet EDUSCHOOL nous avons utilisé pas mal de technologie qui sont : des langages de programmation en lien avec la conception de site web comme le HTML qui nous a permis de concevoir la structure des pages web présent sur notre projet le CSS qui a permis de styliser les différentes pages et le JavaScript qui nous permet de gère l’interaction entre les pages mais aussi nous a permet de réalise les quiz. 
+On a utilisé aussi SUPABASE pour la gestion des utilisateurs. SUPABASE nous permet de récupérer les informations de l’utilisateur lors de son inscription et ces mêmes informations seront affiché sur la page profile de l’utilisateur.  
