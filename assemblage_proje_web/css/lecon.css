@@ -59,16 +59,7 @@ header{
   .cta-btn:active{transform:translateY(1px)}
 
 
-/* Footer*/ 
-/*footer {
-  background-color: var(--primary);
-  color: white;
-  text-align: center;
-  padding: 18px;
-  margin-top: 50px;
-  font-size: 0.95em;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-}*/
+
 /* Footer */
 .identifiant{
   margin-top: 70px;
@@ -188,7 +179,7 @@ button:hover, .btn:hover, .btn-retour:hover {
 /* Bouton retour */
 .btn-retour {
   background-color:  #0b2346;
-  margin-top: 25px;
+
   
 }
 
@@ -230,6 +221,16 @@ button:hover, .btn:hover, .btn-retour:hover {
   margin-bottom: 25px;
   text-align: center;
   color: #333;
+}
+/* ------------------------------
+   BOUTONS LEÇON — ALIGNEMENT
+-------------------------------- */
+.buttons-lecon {
+  display: flex;
+  justify-content: space-between; /* bouton gauche / droite */
+  align-items: center;
+  width: 100%;
+  margin-top: 25px;
 }
 
 /* Responsive */
