@@ -34,18 +34,29 @@
         </header>
   
 
+  <!-- ===== CONTENU PRINCIPAL ===== -->
   <main class="lecon-page">
-     <img id="img-lecon" alt="Illustration du cours" style="max-width:100%; border-radius:12px; display:none; margin-bottom:15px;">
+ 
+    <!-- Illustration -->
+    <img id="img-lecon" alt="Illustration du cours"
+         style="max-width:100%; border-radius:12px; display:none; margin-bottom:15px;">
+ 
+    <!-- Titre et description -->
     <h2 id="titre-lecon">Titre de la leçon</h2>
     <p id="desc-lecon">Description de la leçon</p>
+ 
+    <!-- PDF -->
     <div id="pdfs-container"></div>
-    <a href="mon_cours.html" class="btn"> Retour aux cours</a>
-    <a id="btn-test" href="#" class="btn"> Passer au test</a>
-    <a id="btn-suivant" href="#" class="btn" style="display:none;"> Leçon suivante</a>
-
-
-
+ 
+    <!-- ===== BOUTON LEÇON SUIVANTE ===== -->
+    <a id="btn-suivant" href="#" class="btn" style="display:none;">Leçon suivante</a>
+ 
   </main>
+   <!-- ===== BOUTONS (Retour à gauche / Test à droite) ===== -->
+    <div class="buttons-lecon">
+      <a href="mon_cours.html" class="btn btn-retour">← Retour aux cours</a>
+      <a id="btn-test" href="#" class="btn btn-test">Passer au test →</a>
+    </div>
 
  <footer class="footer">
   <div class="footer-col">
