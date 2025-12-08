@@ -37,18 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    /*if (!user) {
-      alert("Aucun utilisateur inscrit !");
-      return;
-    }
-
-    if (email === user.email && motdepasse === user.motdepasse) {
-      // Crée une session active
-      sessionStorage.setItem("connecte", "true");
-      alert("✅ Connexion réussie !");
-      window.location.href = "profil.html";
-    } else {
-      alert("❌ Identifiants incorrects !");
-    }*/
+  
   });
 });

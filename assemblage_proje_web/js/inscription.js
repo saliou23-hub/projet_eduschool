@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     try {
-      // ✅ Création du compte utilisateur
+      //  Création du compte utilisateur
       const { data, error } = await supabaseClient.auth.signUp({
         email: email,
         password: motdepasse,
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // ✅ Insertion d'informations supplémentaires dans la table profiles
+      //  Insertion d'informations supplémentaires dans la table profiles
       const { error: insertError } = await supabaseClient
         .from("profiles")
         .insert([
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      alert("✅ Inscription réussie !");
+      alert(" Inscription réussie !");
       window.location.href = "authentification.html";
     } catch (err) {
       console.error(err);

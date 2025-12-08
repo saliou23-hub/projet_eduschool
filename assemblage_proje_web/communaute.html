@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr-ca"  xmlns="http:/www.w3.org/1999/xhtml">
-    <head>
-        <meta charset="utf-8">
-        <title>Eduschool</title>
-         <link rel="stylesheet" href="css/style_com.css">
-         <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
-    </head>
-    <body>
-        <header>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>duschool</title>
+   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="css/style_page_faq.css">
+    
+</head>
+<body>
+    
+    <header>
             <div class="nav-inner">
                 <div class="brand">
       
@@ -23,24 +24,32 @@
                 <nav>
                     <ul>
                         <li><a href="eduschool.html" onclick="go('home')">Accueil</a></li>
-                        <li><a href="cours.html" onclick="go('courses')">Cours</a></li>
-                        <li><a href="contact.html" onclick="go('contact.html')">Contact</a></li>
-                        <li><a href="communaute.html" onclick="go('faq')">FAQ</a></li>
-                        <li><a href="authentification.html" onclick="go('Connexion')">Connexion</a></li>
+                        <li><a href="contact.html" onclick="go('contact')">Contact</a></li>
+                        <li><a href="authentification.html" onclick="go('Deconexion')">Connexion</a></li>
                         <li id="navAuth"></li>
                     </ul>
                 </nav>
             </div>
         </header>
-       
-        <h2>Questions posées par les utilisateurs</h2>
-            <div id="faq-list"></div>
-
-        <!-- Lien vers le fichier qui charge les questions -->
-       
-        <script src="js/faq.js"></script>
-    </body>
-<footer class="footer">
+   <section id="faq" class="faq-section">
+    <div class="faq-container">
+        <div class="faq-intro">
+            <h2 class="faq-title">FAQ</h2>
+            <p class="faq-subtitle">Questions fréquentes</p>
+            <p class="faq-text">
+                Tu as des questions sur nos cours en ligne, les enseignants ou la plateforme ?
+                Consulte cette foire aux questions, tu y trouveras les réponses les plus demandées.
+            </p>
+        </div>
+        <div class="faq-list" id="faq-dynamic">
+          
+        </div>
+    </div>
+ </section>
+<script src="js/scipt.js"></script>
+    
+</body>
+ <footer class="footer">
   <div class="footer-col">
     <h3>Navigation</h3>
     <a href="#">Accueil</a>

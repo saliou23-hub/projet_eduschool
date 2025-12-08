@@ -112,6 +112,28 @@ button:hover {
   margin-bottom: 10px;
 }
 
+.progression-container {
+    margin-top: 30px;
+}
+
+.cours-progress {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    height: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+    width: 0;
+    transition: width 0.5s;
+}
+
 .identifiant{
   margin-top: 70px;
 }

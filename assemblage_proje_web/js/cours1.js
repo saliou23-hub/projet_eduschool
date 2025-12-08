@@ -16,9 +16,10 @@ const COURSES = [
              {title:'Dérivées'},
              {title:'Intégrales'}]
   },
-  {id:'Physique', title:'Physique', desc:'Mécanique, optique et électromagnétisme.',
-    lessons:[{title:'Cinématique'},
-             {title:'Énergie'}]
+  {id:'Physique', title:'Physique', desc:'Mécanique, optique et Électricité.',
+    lessons:[{title:'Mécanique'},
+             {title:'Électricité'},
+             {title:'Optique'}]
   },
   {id:'Informatique', title:'Informatique', desc:'Programmation, bases de données, réseaux.',
     lessons:[{title:'Programmation'},
@@ -72,3 +73,5 @@ function goToMyCourse(courseId){
   localStorage.setItem('matiereChoisie', courseId);
   window.location.href = 'mon_cours.html';
 }
+ 
+ 
