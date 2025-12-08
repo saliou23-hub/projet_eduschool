@@ -34,21 +34,44 @@
         </header>
   
 
-  <main class="quiz-container">
-    <h2> Test de compréhension : Optique</h2>
-
+   <main class="quiz-container">
+ 
+    <h2>Test de compréhension : Optique</h2>
+ 
+    <div id="timer-container">
+      Temps restant : <span id="timer">01:40</span>
+    </div>
+ 
+    <div id="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+ 
     <div id="quiz">
       <div id="question-container">
         <h3 id="question">Question ici</h3>
         <div id="answers"></div>
       </div>
-      <button id="next-btn" class="btn">Suivant</button>
+ 
+      <!-- Boutons Précédent, Suivant et Terminer sur la même ligne -->
+      <div class="nav-buttons">
+        <button id="prev-btn" class="btn" style="display:none;">Précédent</button>
+        <button id="next-btn" class="btn">Suivant</button>
+        <button id="finish-test-btn" class="btn">Terminer le test</button>
+      </div>
     </div>
-
-    <div id="result" style="display:none;"></div>
-     <!-- Div ajouté pour éviter l'erreur showAllText -->
-    <div id="allText" style="display:none;"></div>
-
+ 
+    <div id="result"></div>
+ 
+    <!-- POPUP -->
+    <div id="confirm-popup" class="popup">
+      <div class="popup-content">
+        <p>Envoyer toutes vos réponses et terminer ?</p>
+        <p><small>Une fois vos réponses envoyées, vous ne pourrez plus les modifier.</small></p>
+        <button id="cancel-btn" class="btn">Annuler</button>
+        <button id="confirm-btn" class="btn btn-primary">Tout envoyer et terminer</button>
+      </div>
+    </div>
+ 
   </main>
 
    <footer class="footer">

@@ -7,14 +7,14 @@ const supabaseClient = supabase.createClient(
 document.getElementById("contactForm").addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  //const nom = document.getElementById("nom").value;
-  //const question = document.getElementById("question").value;
+  
 
+  const sujet = e.target.sujet.value;
   const nom = e.target.nom.value;
   const question = e.target.questions.value;
   const { error } = await supabaseClient
     .from("faq_questions")
-    .insert([{ nom: nom, question: question }]);
+    .insert([{ sujet: sujet, nom: nom, question: question }]);
   
   if (error) {
     alert("Erreur : " + error.message);

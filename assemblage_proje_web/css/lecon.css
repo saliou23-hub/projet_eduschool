@@ -76,6 +76,7 @@ header{
   justify-content: space-around;
   flex-wrap: wrap;
   text-align: center;
+  margin-top: 20px;
 }
 
 .footer-col h3 {
@@ -179,7 +180,7 @@ button:hover, .btn:hover, .btn-retour:hover {
 /* Bouton retour */
 .btn-retour {
   background-color:  #0b2346;
-
+  /*margin-top: 25px;*/
   
 }
 
@@ -230,7 +231,7 @@ button:hover, .btn:hover, .btn-retour:hover {
   justify-content: space-between; /* bouton gauche / droite */
   align-items: center;
   width: 100%;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 /* Responsive */

@@ -63,14 +63,6 @@ section{
   padding-top: 100px;
 }
 
-/* Main */
-/*main {
-  flex: 1; /* occupe tout l'espace restant pour pousser le footer en bas */
-  /*padding: 20px;
-  
-}*/
-
-/* Grid matières */
 .grid-cours {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -101,7 +93,8 @@ section{
   color: white;
   border: none;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 90px;
   display: inline-block;
   text-decoration: none;
 }

@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cours Universitaires</title>
   <link rel="stylesheet" href="css/cours1.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <script>
+            const supabaseUrl="https://ppmyxgqyuetqozqzxsoz.supabase.co";
+            const supabaseKey="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBwbXl4Z3F5dWV0cW96cXp4c296Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI2NjMzNTYsImV4cCI6MjA3ODIzOTM1Nn0.Yyd8tJ5oc4qv1kBSWPCpzWIeLVvJORKXuzj5Qyvmtiw";
+            const supabaseClient =supabase.createClient(supabaseUrl, supabaseKey);
+        </script>
   <script defer src="js/cours1.js"></script>
 </head>
 <body>
@@ -23,7 +29,7 @@
                 <nav>
                     <ul>
                         <li><a href="eduschool.html" onclick="go('home')">Accueil</a></li>
-                        <li><a href="cours.html" onclick="go('courses')">Cours</a></li>
+                        
                          <li><a href="contact.html" onclick="go('contact')">Contact</a></li>
                         <li><a href="communaute.html" onclick="go('faq')">FAQ</a></li>
                         <li><a href="authentification.html" onclick="go('Deconexion')">Deconexion</a></li>

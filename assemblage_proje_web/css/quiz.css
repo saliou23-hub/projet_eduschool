@@ -51,80 +51,159 @@ header{
 
 /* =============================== */
 /*  Main quiz container */
+/* main */
 main {
-  flex: 1;               /* ajout : permet au footer de descendre */
-  width: 800px;
+  flex: 1;
+  max-width: 650px;
   margin: 40px auto;
-  background: #fff;
-  padding: 30px 40px;
-  border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  margin-bottom: 100px;
+  padding: 0 20px;
 }
-
-h2 {
+ 
+/* timer */
+#timer-container {
+  font-weight: 600;
+  margin-bottom: 10px;
   text-align: center;
-  margin-bottom: 30px;
-  font-size: 1.4rem;
 }
-
-/* =============================== */
-/*  Question & answers */
+ 
+/* progress bar */
+#progress-container {
+  background: #e2e8f0;
+  height: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+ 
+#progress-bar {
+  height: 100%;
+  width: 0;
+  background: #3b82f6;
+  transition: 0.3s;
+}
+ 
+/* question */
 #question {
   font-size: 1.15rem;
+  text-align: center;
   margin-bottom: 20px;
-  font-weight: 500;
 }
-
+ 
+/* réponses */
 #answers {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-bottom: 20px;
 }
-
+ 
 .btn {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 6px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #d9dee3;
+  background: #ffffff;
   cursor: pointer;
   font-size: 1rem;
-  background: #3498db;
-  color: #fff;
-  transition: 0.3s ease;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
 }
-
+ 
 .btn:hover {
-  background: #2980b9;
+  background: #f0f3f7;
 }
-
+ 
+.btn.selected::before {
+  content: "●";
+  color: #3b82f6;
+  margin-right: 10px;
+}
+ 
+/* réponses correctes */
 .correct {
-  background: #2ecc71 !important;
+  background: #d9f7e6 !important;
+  border-color: #27ae60 !important;
+  color: #1e874b;
 }
-
+ 
 .incorrect {
-  background: #e74c3c !important;
+  background: #fbe3e3 !important;
+  border-color: #e74c3c !important;
+  color: #c0392b;
 }
-
+ 
+/* navigation */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+ 
 #next-btn {
-  width: 100%;
-  background: #9b59b6;
+  background: #3b82f6;
+  color: #fff;
 }
-
+ 
 #next-btn:hover {
-  background: #8e44ad;
+  background: #2563eb;
 }
-
+ 
+#prev-btn {
+  background: #e2e8f0;
+  color: #2c3e50;
+}
+ 
+#prev-btn:hover {
+  background: #cbd5e1;
+}
+ 
+/* explication */
 .explanation {
-  margin-top: 10px;
-  font-size: 0.95rem;
-  background: #f1f1f1;
-  padding: 8px 12px;
-  border-left: 4px solid #3498db;
-  border-radius: 5px;
+  margin-top: 15px;
+  background: #f7f9fb;
+  padding: 12px 15px;
+  border-left: 4px solid #3b82f6;
+  border-radius: 8px;
   color: #555;
+  font-size: 0.95rem;
 }
-
+ 
+/* result */
+#result {
+  display: none;
+  text-align: center;
+  padding: 30px;
+}
+ 
+/* popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+ 
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+ 
+/* Bouton Terminer aligné à droite */
+.finish-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+ 
 /* =============================== */
 /*  Footer */
 .identifiant{

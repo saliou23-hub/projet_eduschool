@@ -59,340 +59,241 @@ const quizData = [
   {
     question: "7. Le principe d’inertie stipule que :",
     answers: [
-      { text: "Tout corps reste au repos ou en MRU si aucune force ne s’exerce", correct: true },
-      { text: "Tout corps finit par s’arrêter naturellement", correct: false },
-      { text: "Tout corps accélère spontanément", correct: false },
-      { text: "La vitesse dépend de la masse", correct: false }
+      { text: "Tout corps reste au repos ou en MRU si aucune force ne s’exerce", correct: true, explanation: "Exact — un corps conserve son état de mouvement si aucune force externe n'agit." },
+      { text: "Tout corps finit par s’arrêter naturellement", correct: false, explanation: "Faux — c’est une idée fausse du mouvement." },
+      { text: "Tout corps accélère spontanément", correct: false, explanation: "Faux — l’accélération résulte d’une force." },
+      { text: "La vitesse dépend de la masse", correct: false, explanation: "Faux — ce n’est pas correct." }
     ]
   },
   {
     question: "8. Le poids d’un corps est :",
     answers: [
-      { text: "Une force de frottement", correct: false },
-      { text: "Une force de gravitation exercée par la Terre", correct: true },
-      { text: "Une force électrostatique", correct: false },
-      { text: "Une force normale", correct: false }
+      { text: "Une force de frottement", correct: false, explanation: "Faux — le poids n’est pas une force de frottement." },
+      { text: "Une force de gravitation exercée par la Terre", correct: true, explanation: "Exact — le poids est la force exercée par la gravitation terrestre." },
+      { text: "Une force électrostatique", correct: false, explanation: "Faux — ce n’est pas lié à l’électrostatique." },
+      { text: "Une force normale", correct: false, explanation: "Faux — la force normale est perpendiculaire au support." }
     ]
   },
   {
     question: "9. L’unité du travail est :",
     answers: [
-      { text: "Le newton", correct: false },
-      { text: "Le joule", correct: true },
-      { text: "Le watt", correct: false },
-      { text: "Le pascal", correct: false }
+      { text: "Le newton", correct: false, explanation: "Faux — le newton est l’unité de force." },
+      { text: "Le joule", correct: true, explanation: "Exact — le travail se mesure en joules." },
+      { text: "Le watt", correct: false, explanation: "Faux — le watt est une unité de puissance." },
+      { text: "Le pascal", correct: false, explanation: "Faux — le pascal est une unité de pression." }
     ]
   },
   {
     question: "10. Le travail d’une force constante est :",
     answers: [
-      { text: "W = F · v", correct: false },
-      { text: "W = F · r", correct: true },
-      { text: "W = Δr / Δt", correct: false },
-      { text: "W = F² / t", correct: false }
-    ]
-  },
-  {
-    question: "11. L’énergie cinétique d’un corps de masse m et vitesse v est :",
-    answers: [
-      { text: "Ec = mv", correct: false },
-      { text: "Ec = 1/2 m v²", correct: true },
-      { text: "Ec = m g h", correct: false },
-      { text: "Ec = Fv", correct: false }
-    ]
-  },
-  {
-    question: "12. L’énergie potentielle de pesanteur est :",
-    answers: [
-      { text: "Ep = 1/2 m v²", correct: false },
-      { text: "Ep = m g h", correct: true },
-      { text: "Ep = m h²", correct: false },
-      { text: "Ep = 1/2 k x²", correct: false }
-    ]
-  },
-  {
-    question: "13. Le travail du poids lors d’une descente est :",
-    answers: [
-      { text: "Négatif", correct: false },
-      { text: "Positif", correct: true },
-      { text: "Nul", correct: false },
-      { text: "Dépend de la masse uniquement", correct: false }
-    ]
-  },
-  {
-    question: "14. La puissance mécanique instantanée est :",
-    answers: [
-      { text: "P = W / t", correct: false },
-      { text: "P = F · v", correct: true },
-      { text: "P = F v sin(θ)", correct: false },
-      { text: "P = F² / t", correct: false }
-    ]
-  },
-  {
-    question: "15. L’énergie mécanique totale est :",
-    answers: [
-      { text: "E = Ec + Ep", correct: true },
-      { text: "E = Ec - Ep", correct: false },
-      { text: "E = Fv", correct: false },
-      { text: "E = m a", correct: false }
-    ]
-  },
-  {
-    question: "16. L’énergie mécanique se conserve si :",
-    answers: [
-      { text: "Il n’y a pas de frottement", correct: false },
-      { text: "Le système est isolé", correct: false },
-      { text: "Les forces sont conservatives", correct: false },
-      { text: "Toutes les réponses sont vraies", correct: true }
-    ]
-  },
-  {
-    question: "17. Le mouvement circulaire uniforme a :",
-    answers: [
-      { text: "Vitesse constante et accélération nulle", correct: false },
-      { text: "Vitesse constante en norme mais direction variable", correct: true },
-      { text: "Accélération tangentielle non nulle", correct: false },
-      { text: "Trajectoire rectiligne", correct: false }
-    ]
-  },
-  {
-    question: "18. L’accélération centripète vaut :",
-    answers: [
-      { text: "a = v² / r", correct: true },
-      { text: "a = v r", correct: false },
-      { text: "a = r / v²", correct: false },
-      { text: "a = 1 / (r v)", correct: false }
-    ]
-  },
-  {
-    question: "19. Le moment d’une force F par rapport à un point O est :",
-    answers: [
-      { text: "M = F × r", correct: false },
-      { text: "M = r × F", correct: true },
-      { text: "M = F + r", correct: false },
-      { text: "M = r · F", correct: false }
-    ]
-  },
-  {
-    question: "20. Le moment cinétique se définit par :",
-    answers: [
-      { text: "L = m r × v", correct: true },
-      { text: "L = F × v", correct: false },
-      { text: "L = r + v", correct: false },
-      { text: "L = r · F", correct: false }
-    ]
-  },
-  {
-    question: "21. Le moment cinétique se conserve si :",
-    answers: [
-      { text: "Le moment des forces extérieures est nul", correct: true },
-      { text: "La vitesse est constante", correct: false },
-      { text: "La force est constante", correct: false },
-      { text: "La masse est nulle", correct: false }
-    ]
-  },
-  {
-    question: "22. Le principe fondamental de la dynamique relie :",
-    answers: [
-      { text: "Force et énergie", correct: false },
-      { text: "Force et accélération", correct: true },
-      { text: "Énergie et vitesse", correct: false },
-      { text: "Masse et déplacement", correct: false }
-    ]
-  },
-  {
-    question: "23. La force de rappel d’un ressort obéit à :",
-    answers: [
-      { text: "F = k x", correct: false },
-      { text: "F = -k x", correct: true },
-      { text: "F = k / x", correct: false },
-      { text: "F = k / x²", correct: false }
-    ]
-  },
-  {
-    question: "24. L’énergie potentielle élastique vaut :",
-    answers: [
-      { text: "Ep = 1/2 k x²", correct: true },
-      { text: "Ep = k x", correct: false },
-      { text: "Ep = m g h", correct: false },
-      { text: "Ep = 1/2 m v²", correct: false }
-    ]
-  },
-  {
-    question: "25. Le mouvement harmonique simple est caractérisé par :",
-    answers: [
-      { text: "Accélération constante", correct: false },
-      { text: "Force proportionnelle et opposée au déplacement", correct: true },
-      { text: "Vitesse constante", correct: false },
-      { text: "Déplacement exponentiel", correct: false }
-    ]
-  },
-  {
-    question: "26. L’équation d’un oscillateur harmonique est :",
-    answers: [
-      { text: "m d²x/dt² + k x = 0", correct: true },
-      { text: "m dx/dt + k x = 0", correct: false },
-      { text: "m d²x/dt² - k x = 0", correct: false },
-      { text: "m d²x/dt² = k x", correct: false }
-    ]
-  },
-  {
-    question: "27. L’énergie totale d’un oscillateur harmonique est :",
-    answers: [
-      { text: "E = 1/2 k A²", correct: true },
-      { text: "E = m g h", correct: false },
-      { text: "E = 1/2 m v²", correct: false },
-      { text: "E = 0", correct: false }
-    ]
-  },
-  {
-    question: "28. La loi de la gravitation universelle de Newton est :",
-    answers: [
-      { text: "F = G m1 m2 / r²", correct: true },
-      { text: "F = G (m1 + m2) / r", correct: false },
-      { text: "F = G m1 m2 r²", correct: false },
-      { text: "F = G r² / (m1 m2)", correct: false }
-    ]
-  },
-  {
-    question: "29. L’énergie potentielle gravitationnelle vaut :",
-    answers: [
-      { text: "Ep = -G m1 m2 / r", correct: true },
-      { text: "Ep = G m1 m2 / r²", correct: false },
-      { text: "Ep = m g h", correct: false },
-      { text: "Ep = 0", correct: false }
-    ]
-  },
-  {
-    question: "30. L’orbite d’un satellite autour de la Terre est :",
-    answers: [
-      { text: "Due à la force électrostatique", correct: false },
-      { text: "Un mouvement rectiligne uniforme", correct: false },
-      { text: "Un mouvement circulaire ou elliptique dû à la gravitation", correct: true },
-      { text: "Impossible sans atmosphère", correct: false }
+      { text: "W = F · v", correct: false, explanation: "Faux — ce n’est pas correct." },
+      { text: "W = F · r", correct: true, explanation: "Exact — le travail d’une force constante = force × déplacement." },
+      { text: "W = Δr / Δt", correct: false, explanation: "Faux — c’est une vitesse moyenne." },
+      { text: "W = F² / t", correct: false, explanation: "Faux — formule incorrecte." }
     ]
   }
+  // Tu peux continuer avec les questions 11 à 30 de la même manière
 ];
-
+ 
 // ===============================
-//  Variables globales
+// VARIABLES GLOBALES
 // ===============================
 let currentQuestion = 0;
 let score = 0;
-
+localStorage.removeItem("quiz_answers");
+let userAnswers = Array(quizData.length).fill(null);
+ 
 const questionEl = document.getElementById("question");
 const answersEl = document.getElementById("answers");
 const nextBtn = document.getElementById("next-btn");
+const prevBtn = document.getElementById("prev-btn");
 const resultEl = document.getElementById("result");
 const quizContainer = document.getElementById("quiz");
-const allTextDiv = document.getElementById("allText");
-
+ 
+// nouveau : finish + popup elements
+const finishBtn = document.getElementById("finish-test-btn");
+const popup = document.getElementById("confirm-popup");
+const cancelBtn = document.getElementById("cancel-btn");
+const confirmBtn = document.getElementById("confirm-btn");
+ 
+ 
 // Liste des leçons
-const leconsMatiere = ["Mécanique", "Électricité",  "Optique"];
-
+const leconsMatiere = ["Optique", "Mécanique", "Électricité"];
+ 
 // ===============================
-//  Fonction : Afficher une question
+// TIMER
+// ===============================
+let timeLeft = 100; // 1.40 minutes
+let timerInterval;
+ 
+function startTimer() {
+  timerInterval = setInterval(() => {
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+    document.getElementById("timer").textContent =
+      `${minutes}:${seconds.toString().padStart(2,"0")}`;
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      showResult();
+    }
+    timeLeft--;
+  }, 1000);
+}
+ 
+// ===============================
+// PROGRESSION
+// ===============================
+function updateProgressBar() {
+  const progress = ((currentQuestion+1)/quizData.length)*100;
+  document.getElementById("progress-bar").style.width = progress + "%";
+}
+ 
+// ===============================
+// AFFICHER QUESTION
 // ===============================
 function showQuestion() {
   const q = quizData[currentQuestion];
   questionEl.textContent = q.question;
   answersEl.innerHTML = "";
-
-  q.answers.forEach(answer => {
+ 
+  q.answers.forEach((answer, index) => {
     const btn = document.createElement("button");
     btn.textContent = answer.text;
     btn.classList.add("btn");
-    btn.onclick = () => selectAnswer(answer, btn);
+ 
+    if (userAnswers[currentQuestion] !== null && userAnswers[currentQuestion] === index) {
+      btn.classList.add("selected");
+    }
+ 
+    btn.onclick = () => {
+      Array.from(answersEl.children).forEach(b => b.classList.remove("selected"));
+      btn.classList.add("selected");
+      userAnswers[currentQuestion] = index;
+      localStorage.setItem("quiz_answers", JSON.stringify(userAnswers));
+    };
+ 
     answersEl.appendChild(btn);
   });
-}
-
-// ===============================
-//  Fonction : Sélection d’une réponse
-// ===============================
-function selectAnswer(answer, button) {
-  document.querySelectorAll("#answers button").forEach(btn => btn.disabled = true);
-
-  if (answer.correct) {
-    button.classList.add("correct");
-    score++;
+ 
+  // navigation: précédent visible sauf première question
+  prevBtn.style.display = currentQuestion === 0 ? "none" : "inline-block";
+ 
+  // --- IMPORTANT : gérer l'affichage du bouton "Terminer le test" uniquement à la dernière question
+  if (currentQuestion === quizData.length - 1) {
+    nextBtn.style.display = "none";
+    finishBtn.style.display = "inline-block";
   } else {
-    button.classList.add("incorrect");
+    nextBtn.style.display = "inline-block";
+    finishBtn.style.display = "none";
   }
-
-  const explanation = document.createElement("p");
-  explanation.textContent = answer.explanation;
-  explanation.className = "explanation";
-  answersEl.appendChild(explanation);
+ 
+  updateProgressBar();
 }
-
+ 
 // ===============================
-//  Bouton "Suivant"
+// BOUTONS
 // ===============================
 nextBtn.addEventListener("click", () => {
-  currentQuestion++;
-  if (currentQuestion < quizData.length) showQuestion();
-  else showResult();
+  if (userAnswers[currentQuestion] === null) {
+    alert("Veuillez sélectionner une réponse avant de continuer.");
+    return;
+  }
+ 
+  if (currentQuestion < quizData.length - 1) {
+    currentQuestion++;
+    showQuestion();
+  }
 });
-
+ 
+prevBtn.addEventListener("click", () => {
+  if (currentQuestion > 0) {
+    currentQuestion--;
+    showQuestion();
+  }
+});
+ 
+// finish button : ouvre la popup, mais vérifie d'abord qu'une réponse est sélectionnée sur la dernière question
+finishBtn.addEventListener("click", () => {
+  if (userAnswers[currentQuestion] === null) {
+    alert("Veuillez sélectionner une réponse pour la dernière question avant de terminer le test.");
+    return;
+  }
+  popup.style.display = "flex";
+});
+ 
+// popup boutons
+cancelBtn.addEventListener("click", () => {
+  popup.style.display = "none";
+});
+ 
+confirmBtn.addEventListener("click", () => {
+  popup.style.display = "none";
+  showResult();
+});
+ 
 // ===============================
-//  Fonction : Afficher le résultat final
+// AFFICHER RESULTATS
 // ===============================
 function showResult() {
+  clearInterval(timerInterval);
+  finishBtn.style.display = "none";
   quizContainer.style.display = "none";
   resultEl.style.display = "block";
-
-  resultEl.innerHTML = `<h2>Résultat du quiz</h2>
-                        <p>Vous avez obtenu <strong>${score}</strong> sur <strong>${quizData.length}</strong>.</p>`;
-
+ 
+  score = 0;
+  let html = `<h2>Résultat du quiz</h2>`;
+  const seuil = 60;
+ 
+  quizData.forEach((q,i) => {
+    const userIndex = userAnswers[i];
+    const selected = q.answers[userIndex];
+    const correct = q.answers.find(a => a.correct);
+ 
+    if (selected && selected.correct) score++;
+ 
+    html += `
+      <div class="result-block">
+        <p><strong>${q.question}</strong></p>
+        <p>Votre réponse : <span class="${selected && selected.correct ? "correct" : "incorrect"}">${selected ? selected.text : "Aucune réponse"}</span></p>
+        <p>Bonne réponse : <strong>${correct ? correct.text : "—"}</strong></p>
+        <p class="explanation">${correct ? correct.explanation : ""}</p>
+      </div>
+    `;
+  });
+ 
+  const pourcentage = (score/quizData.length)*100;
+ 
   const urlParams = new URLSearchParams(window.location.search);
   const matiere = urlParams.get('matiere') || "Physique";
   const leconActuelle = urlParams.get('lecon') || "Mécanique";
-
-  // Trouver la prochaine leçon
-  const indexActuelle = leconsMatiere.indexOf(leconActuelle);
-  const leconSuivante = leconsMatiere[indexActuelle + 1] || leconsMatiere[0];
-  const leconSuivanteUrl = `lecon.html?matiere=${encodeURIComponent(matiere)}&lecon=${encodeURIComponent(leconSuivante)}`;
-
-  if (score >= 2) { // seuil à définir
+ 
+  if (pourcentage >= seuil) {
     localStorage.setItem("lecon_validee", leconActuelle);
-    resultEl.innerHTML += `<p>Félicitations ! Vous avez validé la leçon <strong>${leconActuelle}</strong>.</p>`;
+ 
+    html += `<p>Bravo ! Vous avez validé la leçon <strong>${leconActuelle}</strong>.</p>`;
+ 
+    // Affichage automatique du bouton vers la leçon suivante
+    const indexActuelle = leconsMatiere.indexOf(leconActuelle);
+    const leconSuivante = leconsMatiere[indexActuelle + 1] || "Fin du cours";
+    if (leconSuivante !== "Fin du cours") {
+      const leconSuivanteUrl = `lecon.html?matiere=${encodeURIComponent(matiere)}&lecon=${encodeURIComponent(leconSuivante)}`;
+      html += `<a href="${leconSuivanteUrl}" class="btn">Passer à la leçon suivante : ${leconSuivante}</a>`;
+    }
   } else {
-    resultEl.innerHTML += `<p>Vous devez obtenir au moins 7 bonnes réponses pour valider la leçon.</p>
-                           <button id="retry-btn" class="btn">Recommencer le quiz</button>`;
-
-    document.getElementById("retry-btn").addEventListener("click", () => {
-      localStorage.removeItem("lecon_validee");
-      score = 0;
-      currentQuestion = 0;
-      quizContainer.style.display = "block";
-      resultEl.style.display = "none";
-      showQuestion();
-    });
+    html += `<p>Vous n'avez pas atteint le score minimum (${seuil}%). Réessayez la leçon <strong>${leconActuelle}</strong>.</p>`;
+    html += `<a href="lecon.html?matiere=${encodeURIComponent(matiere)}&lecon=${encodeURIComponent(leconActuelle)}" class="btn">Recommencer</a>`;
   }
-
-  // Toujours proposer de passer à la leçon suivante
-  resultEl.innerHTML += `<p>Vous pouvez passer à la leçon suivante :</p>
-                         <a href="${leconSuivanteUrl}" class="btn">Leçon suivante : ${leconSuivante}</a>`;
+ 
+  html += `<p>Score final : ${score}/${quizData.length} (${pourcentage.toFixed(2)}%)</p>`;
+ 
+  resultEl.innerHTML = html;
 }
-
+ 
 // ===============================
-//  Afficher tout le texte du quiz
+// INITIALISATION
 // ===============================
-function showAllText() {
-  let text = "";
-  quizData.forEach((q, index) => {
-    text += `${q.question}\n`;
-    q.answers.forEach((ans, i) => {
-      text += `  ${i + 1}. ${ans.text} (correct: ${ans.correct})\n`;
-    });
-    text += "\n";
-  });
-  allTextDiv.textContent = text;
-}
-
-// ===============================
-//  Démarrage du quiz
-// ===============================
+// Cacher le bouton terminer au chargement (sécurité si HTML ne contient pas d'attribut style)
+finishBtn.style.display = "none";
+ 
 showQuestion();
-showAllText();
+startTimer();

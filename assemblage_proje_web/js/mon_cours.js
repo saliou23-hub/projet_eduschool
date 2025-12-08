@@ -61,36 +61,52 @@ const contenus = {
     }
   ],
   "Sciences Humaines": [
-    { titre: "Éthique et société", 
-      desc: "Responsabilité numérique, enjeux moraux des IA.", 
-      img: "images/Ethique et societe.png", 
-      pdfs: ["documents/ethique_ia.pdf","documents/vie_privee.pdf"] 
+    { titre: "Éthique et société",
+      desc: "Responsabilité numérique, enjeux moraux des IA.",
+      img: "images/Ethique et societe.png",
+      pdfs: ["documents/ethique_ia.pdf","documents/vie_privee.pdf"]
     },
-    { titre: "Communication", 
-      desc: "Techniques orales et écrites à l’université.", 
-      img: "images/Communication.jpg", 
-      pdfs: ["documents/communication.pdf","documents/communication_orale.pdf"] 
+    { titre: "Communication",
+      desc: "Techniques orales et écrites à l’université.",
+      img: "images/Communication.jpg",
+      pdfs: ["documents/communication.pdf","documents/communication_orale.pdf"]
     },
-    { titre: "Culture générale", 
-      desc: "Histoire contemporaine, philosophie et économie.", 
-      img: "images/Culture generale.jpg", 
-      pdfs: ["documents/culture_modernite.pdf","documents/histoire_resume.pdf"] 
+    { titre: "Culture générale",
+      desc: "Histoire contemporaine, philosophie et économie.",
+      img: "images/Culture generale.jpg",
+      pdfs: ["documents/culture_modernite.pdf","documents/histoire_resume.pdf"]
+    }
+  ],
+ "Chimie": [
+    {
+      titre: "Structure atomique",
+      desc: "Protons, neutrons, électrons",
+      img: "images/Programmation.jpg",
+      pdfs: ["documents/Structure-atomique.pdf", "documents/Structure de l’atome - exercices.pdf"]
+    },
+    {
+      titre: "Réactions",
+      desc: "Réaction acido-basique.",
+      img: "images/Bases de données.jpg",
+      pdfs: ["documents/reaction.pdf", "documents/Réactions-chimiques-exercices.pdf"]
     }
   ]
-
+ 
 };
-
+ 
 // Sauvegarde globale pour lecon.js
 localStorage.setItem('contenusGlobal', JSON.stringify(contenus));
-
+ 
 // Récupérer la matière choisie
 const zoneChoix = document.getElementById('zone-choix');
 const choix = localStorage.getItem('matiereChoisie');
-
+ 
+ 
+ 
 if (choix && contenus[choix]) {
   let html = `<h3>${choix}</h3>`;
   html += `<div class="cours-container">`;
-
+ 
   contenus[choix].forEach(c => {
     html += `
       <div class="carte-cours">
@@ -106,13 +122,15 @@ if (choix && contenus[choix]) {
       </div>
     `;
   });
-
+ 
   html += `</div>`;
   zoneChoix.innerHTML = html;
-
+ 
 } else {
   zoneChoix.innerHTML = `
     <p>Vous n'avez encore choisi aucune matière.</p>
     <a href="cours.html" class="btn">Choisir une matière</a>
   `;
 }
+ 
+ 
