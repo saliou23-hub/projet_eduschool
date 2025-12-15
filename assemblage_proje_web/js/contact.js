@@ -13,7 +13,7 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
   const nom = e.target.nom.value;
   const question = e.target.questions.value;
   const { error } = await supabaseClient
-    .from("faq_questions")
+    .from("contact_questions")
     .insert([{ sujet: sujet, nom: nom, question: question }]);
   
   if (error) {

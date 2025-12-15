@@ -234,23 +234,53 @@ button:hover, .btn:hover, .btn-retour:hover {
   margin-top: 20px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  header {
+/*Responsive*/
+@media (max-width: 600px) {
+  main {
+    padding: 20px;
+  }
+  header h1 {
+    font-size: 1.1rem;
+  }
+  nav ul {
+    display:none;
+    position:absolute;
+    right:10px;
+    top:60px;
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.1);
+    flex-direction:column;
+    gap:12px;
+  }
+   nav ul.open {
+    display:flex;
+  }
+  .menu-btn {
+    display:block;
+    font-size:26px;
+    cursor:pointer;
+  }
+  .btn {
+    font-size: 0.95rem;
+    padding: 8px 12px;
+  }
+  
+  /* Textes */
+  .title-xl {
+    font-size: 28px;
+  }
+
+  /* Hero */
+  .btn-row {
     flex-direction: column;
-    text-align: center;
+    width: 100%;
   }
 
-  .cards-container {
-    flex-direction: column;
-    align-items: center;
+  /* Images */
+  .hero-image {
+    height: 220px;
   }
-
-  .card {
-    width: 90%;
-  }
-
-  section.cours, .cours-container, .lecon-page {
-    padding: 0 12px;
-  }
+  .footer {flex-direction:column; text-align:center;}
 }

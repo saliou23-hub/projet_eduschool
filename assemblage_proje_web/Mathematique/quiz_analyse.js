@@ -20,25 +20,7 @@ const quizData = [
       { text: "Seulement pour 0", correct: false, explanation: "Faux, cela ne suffit pas." },
       { text: "Seulement pour 1", correct: false, explanation: "Faux, cela ne suffit pas." }
     ]
-  },/*
-  {
-    question: "Si a > b > 0, alors quel est le rapport des inverses ?",
-    answers: [
-      { text: "1/b > 1/a", correct: true, explanation: "Exact, l’inverse inverse l’ordre." },
-      { text: "1/b < 1/a", correct: false, explanation: "Non, l’ordre est inversé." },
-      { text: "1/a = 1/b", correct: false, explanation: "Faux, a ≠ b." },
-      { text: "Impossible à dire", correct: false, explanation: "Faux, c’est déterminé." }
-    ]
   },
-  {
-    question: "L’hypothèse b > 0 est-elle nécessaire pour l’inverse ?",
-    answers: [
-      { text: "Oui", correct: true, explanation: "Exact, on ne peut pas diviser par zéro." },
-      { text: "Non", correct: false, explanation: "Faux, b > 0 est nécessaire." },
-      { text: "Parfois", correct: false, explanation: "Non, c’est toujours nécessaire." },
-      { text: "Seulement si a > 0", correct: false, explanation: "Non, cela dépend de b uniquement." }
-    ]
-  },*/
   {
     question: "Pour E = {n/(n+1) | n ∈ N}, est-il borné ?",
     answers: [

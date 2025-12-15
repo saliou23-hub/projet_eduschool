@@ -66,7 +66,7 @@ async function loadQuestions() {
 
     container.appendChild(item);
 
-    // Charger les réponses existantes
+    
     loadReponses(q.id, reponsesContainer);
   }
 }
@@ -122,5 +122,5 @@ async function envoyerReponse(question_id) {
   loadQuestions(); // refresh
 }
 
-/*window.envoyerReponse=envoyerReponse;*/
+
 loadQuestions();

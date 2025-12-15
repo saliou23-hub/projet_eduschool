@@ -169,16 +169,59 @@ button:hover {
   color: #fff;
 }
 /*Responsive*/
-
 @media (max-width: 600px) {
-  main {
+  .corps-page {
     padding: 20px;
   }
-  header h1 {
+  .brand div {
     font-size: 1.1rem;
+  }
+  nav ul {
+    display:none;
+    position:absolute;
+    right:10px;
+    top:60px;
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.1);
+    flex-direction:column;
+    gap:12px;
+  }
+   nav ul.open {
+    display:flex;
+  }
+  .menu-btn {
+    display:block;
+    font-size:26px;
+    cursor:pointer;
   }
   .btn {
     font-size: 0.95rem;
     padding: 8px 12px;
   }
+  
+  /* Textes */
+  .title-xl {
+    font-size: 28px;
+  }
+
+  /* Hero */
+  .btn-row {
+    flex-direction: column;
+    width: 100%;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+  section{
+    width: 90%;
+    padding: 20px;
+  }
+  /* Images */
+  .hero-image {
+    height: 220px;
+  }
+  .footer {flex-direction:column; text-align:center;}
 }

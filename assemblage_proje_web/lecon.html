@@ -17,6 +17,7 @@
                         <div style="font-weight:700">EDUSCHOOL</div>
                         <div class="small">Apprendre · Pratiquer · Réussir</div>
                     </div>
+                    <div class="menu-btn">☰</div>
                 </div>
     
 
@@ -59,7 +60,13 @@
       <a id="btn-test" href="#" class="btn btn-test">Passer au test →</a>
     </div>
 
- <footer class="footer">
+
+<script>
+        document.querySelector(".menu-btn").addEventListener("click", () => {
+            document.querySelector("nav ul").classList.toggle("open");
+        });
+    </script>
+    <footer class="footer">
   <div class="footer-col">
     <h3>Navigation</h3>
     <a href="#">Accueil</a>
@@ -93,4 +100,5 @@
   
 </footer>
 </body>
+ 
 </html>
