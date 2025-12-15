@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mot de passe oublié</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -16,6 +16,7 @@
                         <div style="font-weight:700">EDUSCHOOL</div>
                         <div class="small">Apprendre · Pratiquer · Réussir</div>
                     </div>
+                    <div class="menu-btn">☰</div>
                 </div>
     
 
@@ -46,39 +47,43 @@
     </div>
   
   <script src="js/mp-1.js"></script>
-</body>
-
-<footer class="footer">
-  <div class="footer-col">
-    <h3>Navigation</h3>
-    <a href="#">Accueil</a>
-    <a href="#">Cours</a>
-    <a href="#">Connexion</a>
-    <a href="#">Contact</a>
-    <a href="#">Quiz</a>
+  <script>
+        document.querySelector(".menu-btn").addEventListener("click", () => {
+            document.querySelector("nav ul").classList.toggle("open");
+        });
+    </script>
+    <footer class="footer">
+      <div class="footer-col">
+        <h3>Navigation</h3>
+        <a href="#">Accueil</a>
+        <a href="#">Cours</a>
+        <a href="#">Connexion</a>
+        <a href="#">Contact</a>
+        <a href="#">Quiz</a>
     
-  </div>
+      </div>
 
-  <div class="footer-col">
-    <h3>THÉMATIQUES</h3>
-    <a href="#">Mathematique</a>
-    <a href="#">Programmation</a>
-    <a href="#">Physique</a>
-    <a href="#">science-Humain</a>
-    <div class="identifiant"><p>© 2025 Eduschool</p></div>
+      <div class="footer-col">
+        <h3>THÉMATIQUES</h3>
+        <a href="#">Mathematique</a>
+        <a href="#">Programmation</a>
+        <a href="#">Physique</a>
+        <a href="#">science-Humain</a>
+        <div class="identifiant"><p>© 2025 Eduschool</p></div>
     
-  </div>
+      </div>
 
-  <div class="footer-col">
-    <h3>Nos contacts</h3>
-    <div class="social">
-    <a href="#">Facebook<img src="images/2023_Facebook_icon.svg.webp" alt="Facebook"></a>
-    <a href="#">Twitter<img src="images/nouvelle-icone-du-logo-twitter-x-fond-noir_1017-45427.jpg" alt="Instagram"></a>
-    <a href="#">Instagram<img src="images/Instagram_logo_2016.svg.webp" alt="Twitter"></a>
-    <a href="#">Youtube<img src="images/youtubepng.png" alt="Youtube"></a>
-    <a href="#">LinkedIn<img src="images/linkedin.png" alt="LinkedIn"></a>
-    </div>
-  </div>
+      <div class="footer-col">
+        <h3>Nos contacts</h3>
+        <div class="social">
+          <a href="#">Facebook<img src="images/2023_Facebook_icon.svg.webp" alt="Facebook"></a>
+          <a href="#">Twitter<img src="images/nouvelle-icone-du-logo-twitter-x-fond-noir_1017-45427.jpg" alt="Instagram"></a>
+          <a href="#">Instagram<img src="images/Instagram_logo_2016.svg.webp" alt="Twitter"></a>
+          <a href="#">Youtube<img src="images/youtubepng.png" alt="Youtube"></a>
+          <a href="#">LinkedIn<img src="images/linkedin.png" alt="LinkedIn"></a>
+        </div>
+      </div>
   
-</footer>
+  </footer>
+</body>
 </html>

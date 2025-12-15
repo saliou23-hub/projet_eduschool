@@ -13,49 +13,7 @@ const quizData = [
       { text: "Certains étudiants ne réussissent pas", correct: true, explanation: "Exact, c’est la négation logique." },
       { text: "Tous les étudiants échouent", correct: false, explanation: "Non, c’est différent." },
       { text: "Certains étudiants réussissent", correct: false, explanation: "Non, ce n’est pas la négation." }
-  ]},/*
-  { question: "3. Dans une implication P⇒Q, la contraposée est :", answers: [
-      { text: "Q⇒P", correct: false, explanation: "Non, c’est l’inverse, pas la contraposée." },
-      { text: "¬Q⇒¬P", correct: true, explanation: "Exact, c’est la contraposée." },
-      { text: "P⇔Q", correct: false, explanation: "Non, c’est l’équivalence." },
-      { text: "¬P⇒¬Q", correct: false, explanation: "Non, c’est l’inverse de la contraposée." }
   ]},
-  { question: "4. L’équivalence logique de P⇒Q est :", answers: [
-      { text: "P∨Q", correct: false, explanation: "Faux, c’est incorrect." },
-      { text: "¬P∨Q", correct: true, explanation: "Exact, P⇒Q ≡ ¬P∨Q." },
-      { text: "¬Q∨P", correct: false, explanation: "Non, c’est faux." },
-      { text: "P∧Q", correct: false, explanation: "Non, ce n’est pas équivalent." }
-  ]},
-  { question: "5. L’ensemble vide est :", answers: [
-      { text: "Un sous-ensemble de tout ensemble", correct: true, explanation: "Exact, l’ensemble vide est inclus dans tout ensemble." },
-      { text: "Un ensemble infini", correct: false, explanation: "Faux, il n’a aucun élément." },
-      { text: "L’ensemble {0}", correct: false, explanation: "Non, {0} contient un élément." },
-      { text: "Une relation d’ordre", correct: false, explanation: "Faux, ce n’est pas une relation." }
-  ]},
-  { question: "6. Deux ensembles sont égaux si :", answers: [
-      { text: "Ils ont la même cardinalité", correct: false, explanation: "Non, la cardinalité seule ne suffit pas." },
-      { text: "Ils contiennent les mêmes éléments", correct: true, explanation: "Exact, c’est la définition de l’égalité d’ensembles." },
-      { text: "Leurs intersections sont vides", correct: false, explanation: "Non, ce n’est pas l’égalité." },
-      { text: "Ils sont disjoints", correct: false, explanation: "Non, ce n’est pas correct." }
-  ]},
-  { question: "7. L’intersection de deux ensembles A et B est :", answers: [
-      { text: "L’ensemble des éléments de A seulement", correct: false, explanation: "Non, c’est l’intersection." },
-      { text: "L’ensemble des éléments de B seulement", correct: false, explanation: "Non, c’est l’intersection." },
-      { text: "L’ensemble des éléments communs à A et B", correct: true, explanation: "Exact, c’est la définition de l’intersection." },
-      { text: "L’union de A et B", correct: false, explanation: "Non, c’est la réunion, pas l’intersection." }
-  ]},
-  { question: "8. Si A⊆B et B⊆C, alors :", answers: [
-      { text: "A=C", correct: false, explanation: "Non, A est seulement inclus dans C." },
-      { text: "A⊆C", correct: true, explanation: "Exact, la relation de sous-ensemble est transitive." },
-      { text: "C⊆A", correct: false, explanation: "Non, c’est l’inverse." },
-      { text: "A∩C=∅", correct: false, explanation: "Non, c’est faux." }
-  ]},
-  { question: "9. Le produit cartésien A×B est :", answers: [
-      { text: "L’union des deux ensembles", correct: false, explanation: "Non, ce n’est pas l’union." },
-      { text: "L’ensemble des couples (a,b) avec a∈A, b∈B", correct: true, explanation: "Exact, c’est la définition du produit cartésien." },
-      { text: "L’intersection des deux ensembles", correct: false, explanation: "Non, c’est faux." },
-      { text: "Une fonction de A vers B", correct: false, explanation: "Non, ce n’est pas une fonction." }
-  ]},*/
   { question: "10. Une fonction f:A→B est injective si :", answers: [
       { text: "Deux éléments différents de A ont des images différentes", correct: true, explanation: "Exact, c’est la définition d’une fonction injective." },
       { text: "Tous les éléments de A ont la même image", correct: false, explanation: "Non, c’est constant." },

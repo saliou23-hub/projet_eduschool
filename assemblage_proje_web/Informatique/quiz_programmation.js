@@ -19,70 +19,7 @@ const quizData = [
       { text: "x := 3", correct: false, explanation: "C’est l’opérateur walrus, mais ici on veut une simple affectation." },
       { text: "x = 3", correct: true, explanation: "Oui — en Python, l’affectation se fait avec ‘=’." }
     ]
-  },/*
-  {
-    question: "3. Parmi ces noms, lequel est un identificateur valide ?",
-    answers: [
-      { text: "2variable", correct: false, explanation: "Faux — un identificateur ne peut pas commencer par un chiffre." },
-      { text: "_varNom", correct: true, explanation: "Exact — underscore initial est autorisé." },
-      { text: "for", correct: false, explanation: "Non — 'for' est un mot-clé réservé." },
-      { text: "var-nom", correct: false, explanation: "Faux — le tiret ‘-’ n’est pas autorisé dans les identificateurs." }
-    ]
   },
-  {
-    question: "4. Le typage en Python est :",
-    answers: [
-      { text: "Statique et explicite", correct: false },
-      { text: "Statique et implicite", correct: false },
-      { text: "Dynamique et explicite", correct: false },
-      { text: "Dynamique et implicite", correct: true, explanation: "Oui — le type est déterminé automatiquement à l’exécution." }
-    ]
-  },
-  {
-    question: "5. Quelle instruction permet d’afficher une variable à l’écran ?",
-    answers: [
-      { text: "echo(x)", correct: false },
-      { text: "print(x)", correct: true, explanation: "Exact — ‘print()’ affiche le contenu d’une variable." },
-      { text: "display(x)", correct: false },
-      { text: "show(x)", correct: false }
-    ]
-  },
-  {
-    question: "6. Que signifie le symbole '#' dans un programme Python ?",
-    answers: [
-      { text: "Le début d’un commentaire", correct: true, explanation: "Oui — tout texte après '#' est ignoré par l’interpréteur." },
-      { text: "Un opérateur logique", correct: false },
-      { text: "Un caractère spécial", correct: false },
-      { text: "La fin d’une instruction", correct: false }
-    ]
-  },
-  {
-    question: "7. Quelle est la valeur affichée par ce code ?\\n\\n```python\\nn = 4\\nsomme = 0\\nfor i in range(1, n):\\n    somme += i\\nprint(somme)\\n```",
-    answers: [
-      { text: "10", correct: false },
-      { text: "6", correct: true, explanation: "Oui — range(1,4) génère [1,2,3], somme = 1+2+3 = 6." },
-      { text: "4", correct: false },
-      { text: "3", correct: false }
-    ]
-  },
-  {
-    question: "8. Que se passe-t-il si on écrit `x = 3` puis `x = 'Bonjour'` ?",
-    answers: [
-      { text: "Erreur de type", correct: false },
-      { text: "Le type de x devient str", correct: true, explanation: "Oui — Python change le type automatiquement selon la nouvelle valeur." },
-      { text: "Le programme s’arrête", correct: false },
-      { text: "x garde la valeur 3", correct: false }
-    ]
-  },
-  {
-    question: "9. Quelle fonction donne le type d’une variable ?",
-    answers: [
-      { text: "typeof(x)", correct: false },
-      { text: "type(x)", correct: true, explanation: "Exact — la fonction ‘type()’ retourne le type de l’objet." },
-      { text: "class(x)", correct: false },
-      { text: "gettype(x)", correct: false }
-    ]
-  },*/
   {
     question: "10. Quelle fonction permet d’évaluer une chaîne comme une expression Python ?",
     answers: [

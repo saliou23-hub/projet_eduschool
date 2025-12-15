@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr-ca"  xmlns="http:/www.w3.org/1999/xhtml">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Profil Utilisateur</title>
          <link rel="stylesheet" href="css/profil.css">
         <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -21,6 +21,7 @@
                         <div style="font-weight:700">EDUSCHOOL</div>
                         <div class="small">Apprendre · Pratiquer · Réussir</div>
                     </div>
+                    <div class="menu-btn">☰</div>
                 </div>
     
 
@@ -60,8 +61,12 @@
         </main>
         
         <script src="js/profil-script.js" ></script>
-    </body>
-    <footer class="footer">
+        <script>
+        document.querySelector(".menu-btn").addEventListener("click", () => {
+            document.querySelector("nav ul").classList.toggle("open");
+        });
+    </script>
+     <footer class="footer">
   <div class="footer-col">
     <h3>Navigation</h3>
     <a href="#">Accueil</a>
@@ -94,4 +99,6 @@
   </div>
   
 </footer>
+    </body>
+   
 </html>

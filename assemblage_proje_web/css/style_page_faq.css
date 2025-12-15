@@ -3,9 +3,7 @@ body {
     margin: 0;
     background: white;
     font-family: Arial, Helvetica, sans-serif;
-
-
-
+}
 header{
     background:linear-gradient(90deg,rgba(255,255,255,0.7),var(--card));
     padding:12px 0;backdrop-filter: blur(6px);
@@ -69,7 +67,7 @@ header{
     text-decoration: underline;
 }
 
-}
+
 
 .faq-section {
     padding: 4rem 1.5rem;
@@ -197,7 +195,7 @@ header{
 .footer-col a:hover {
   color: #fff;
 }
-@keyframes faqFade {
+/*@keyframes faqFade {
     from {
         opacity: 0;
         transform: translateY(-4px);
@@ -218,3 +216,60 @@ header{
     }
 }
 
+/*Responsive*/
+@media (max-width: 600px) {
+  .corps-page {
+    padding: 20px;
+  }
+  .brand div {
+    font-size: 1.1rem;
+  }
+  nav ul {
+    display:none;
+    position:absolute;
+    right:10px;
+    top:60px;
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.1);
+    flex-direction:column;
+    gap:12px;
+  }
+   nav ul.open {
+    display:flex;
+  }
+  .menu-btn {
+    display:block;
+    font-size:26px;
+    cursor:pointer;
+  }
+  .btn {
+    font-size: 0.95rem;
+    padding: 8px 12px;
+  }
+  
+  /* Textes */
+  .title-xl {
+    font-size: 28px;
+  }
+
+  /* Hero */
+  .btn-row {
+    flex-direction: column;
+    width: 100%;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+  section{
+    width: 90%;
+    padding: 20px;
+  }
+  /* Images */
+  .hero-image {
+    height: 220px;
+  }
+  .footer {flex-direction:column; text-align:center;}
+}

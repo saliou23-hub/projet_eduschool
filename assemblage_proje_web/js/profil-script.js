@@ -2,11 +2,9 @@ document.addEventListener("DOMContentLoaded", async() => {
   const nomEl = document.getElementById("nomUtilisateur");
   const emailEl = document.getElementById("emailUtilisateur");
 
-  // Si ces éléments n'existent pas → ce n'est pas la page profil
+  // Si ces éléments n'existent pas ce n'est pas la page profil
   if (!nomEl || !emailEl) return;
 
-  //const user = JSON.parse(localStorage.getItem("utilisateur"));
-  //const connecte = sessionStorage.getItem("connecte");
   const{data:{user},error}=await supabaseClient.auth.getUser();
 
   if(error || !user){
